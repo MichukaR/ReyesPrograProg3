@@ -4,9 +4,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ReyesMMProgIII.Views.FormularioView">
     <ScrollView>
-        <VerticalStackLayout Padding="20">
-            <Label Text="Michelle Reyes - 21/03/2004" FontAttributes="Bold" FontSize="20" />
-
+        <VerticalStackLayout Padding="20" Spacing="10">
+            <Label Text="Michelle Reyes - 21/03/2004" FontAttributes="Bold" FontSize="17" />
+            <Label Text="PRODUCTO" FontAttributes="Bold" FontSize="20" />
+            
             <Entry Placeholder="Producto" Text="{Binding Nombre}" />
             <Entry Placeholder="Categoría" Text="{Binding Categoria}" />
             <Entry Placeholder="Cantidad" Keyboard="Numeric" Text="{Binding Cantidad}" />
