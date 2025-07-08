@@ -4,12 +4,14 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:ReyesMMProgIII"
+    xmlns:views="clr-namespace:ReyesMMProgIII.Views"
     Shell.FlyoutBehavior="Disabled"
-    Title="ReyesMMProgIII">
-
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    Title="Examen Progreso III">
+    
+    <TabBar>
+        <ShellContent Title="Formulario" ContentTemplate="{DataTemplate views:FormularioView}" />
+        <ShellContent Title="Productos" ContentTemplate="{DataTemplate views:ListaDeProductosView}" />
+        <ShellContent Title="Logs" ContentTemplate="{DataTemplate views:LogsView}" />
+    </TabBar>
 
 </Shell>
